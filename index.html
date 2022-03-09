@@ -70,7 +70,7 @@
   }
 </script>
   
-  <p>3人称でのサイズ<p>
+  <p>3人称でのサイズ1<p>
 <input type="text" value="0.1" id="text4" maxlength="100" />
 <input type="button" value="決定" onclick="clickBtn4()" />
 
@@ -80,8 +80,30 @@
     document.getElementById("span4").textContent = t4;
   }
 </script>
+  
+  <p>3人称でのサイズ2<p>
+<input type="text" value="0.1" id="text4n2" maxlength="100" />
+<input type="button" value="決定" onclick="clickBtn4n2()" />
 
-<p>1人称でのサイズ<p>
+<script>
+  function clickBtn4n2() {
+    const t4n2 = document.getElementById("text4n2").value;
+    document.getElementById("span4n2").textContent = t4n2;
+  }
+</script>
+  
+  <p>3人称でのサイズ3<p>
+<input type="text" value="0.1" id="text4n3" maxlength="100" />
+<input type="button" value="決定" onclick="clickBtn4n3()" />
+
+<script>
+  function clickBtn4n3() {
+    const t4n3 = document.getElementById("text4n3").value;
+    document.getElementById("span4n3").textContent = t4n3;
+  }
+</script>
+
+<p>1人称でのサイズ1<p>
 <input type="text" value="0.1" id="text5" maxlength="100" />
 <input type="button" value="決定" onclick="clickBtn5()" />
 
@@ -92,5 +114,26 @@
   }
 </script>
   
+  <p>1人称でのサイズ2<p>
+<input type="text" value="0.1" id="text5n2" maxlength="100" />
+<input type="button" value="決定" onclick="clickBtn5n2()" />
+
+<script>
+  function clickBtn5n2() {
+    const t5n2 = document.getElementById("text5n2").value;
+    document.getElementById("span5n2").textContent = t5n2;
+  }
+</script>
+  
+  <p>1人称でのサイズ3<p>
+<input type="text" value="0.1" id="text5n3" maxlength="100" />
+<input type="button" value="決定" onclick="clickBtn5n3()" />
+
+<script>
+  function clickBtn5n3() {
+    const t5n3 = document.getElementById("text5").value;
+    document.getElementById("span5n3").textContent = t5n3;
+  }
+</script>
 
 </html>
