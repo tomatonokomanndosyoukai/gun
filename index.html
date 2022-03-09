@@ -56,6 +56,12 @@
   function clickBtn2() {
     const t2 = document.getElementById("text2").value;
     document.getElementById("span2").textContent = t2;
+    document.getElementById("span2n2").textContent = t2;
+    document.getElementById("span2n3").textContent = t2;
+    document.getElementById("span2n4").textContent = t2;
+    document.getElementById("span2n5").textContent = t2;
+    document.getElementById("span2n6").textContent = t2;
+    document.getElementById("span2n7").textContent = t2;
   }
 </script>
   
@@ -135,5 +141,27 @@
     document.getElementById("span5n3").textContent = t5n3;
   }
 </script>
-
+  
+  <p>ビヘイビア/animation_controllers/has.json</p>
+  
+  <p>{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.has": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "<span id="span2n3"></span>": "(query.get_equipped_item_name == '<span id="span2n4"></span>')" }
+    ]
+        },
+        "": {
+          "on_entry": [
+            "/function has.<span id="span2n5"></span>"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        }
+      }
+    }
+  }
+}</p>
 </html>
