@@ -1,1 +1,96 @@
+<html>
 
+  <p>ビヘイビア/items/このファイル</p>
+  <p>{
+  "format_version": "1.17.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "<span id="span1"></span>",
+      "category" : "equipment" 
+    },
+    "components": {
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:use_duration": 99999,
+      "minecraft:icon": {
+        "texture": "<span id="span2"></span>"},
+      "minecraft:display_name":{
+          "value":"<span id="span3"></span>"
+        },
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "third_person": {
+            "scale": [<span id="span4"></span>, <span id="span4"></span>, <span id="span4"></span>]
+          },
+          "first_person": {
+            "scale": [<span id="span5"></span>, <span id="span5"></span>, <span id="span5"></span>]
+        }
+       }
+      },
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation_modifier": "supernatural",
+        "can_always_eat": true
+      }
+    }
+  }
+}</p>
+  
+   <p>アイテムID<p>
+<input type="text" value="〇〇:〇〇" id="text1" maxlength="100" />
+<input type="button" value="決定" onclick="clickBtn1()" />
+
+<script>
+  function clickBtn1() {
+    const t1 = document.getElementById("text1").value;
+    document.getElementById("span1").textContent = t1;
+  }
+</script>
+  
+     <p>item_texture.jsonでのテクスチャの名前<p>
+<input type="text" value="sample" id="text2" maxlength="10" />
+<input type="button" value="決定" onclick="clickBtn2()" />
+
+<script>
+  function clickBtn2() {
+    const t2 = document.getElementById("text2").value;
+    document.getElementById("span2").textContent = t2;
+  }
+</script>
+  
+  <p>ゲーム内での名前<p>
+<input type="text" value="とまとがん" id="text3" maxlength="100" />
+<input type="button" value="決定" onclick="clickBtn3()" />
+
+<script>
+  function clickBtn3() {
+    const t3 = document.getElementById("text3").value;
+    document.getElementById("span3").textContent = t3;
+  }
+</script>
+  
+  <p>3人称でのサイズ<p>
+<input type="text" value="0.1" id="text4" maxlength="100" />
+<input type="button" value="決定" onclick="clickBtn4()" />
+
+<script>
+  function clickBtn4() {
+    const t4 = document.getElementById("text4").value;
+    document.getElementById("span4").textContent = t4;
+  }
+</script>
+
+<p>1人称でのサイズ<p>
+<input type="text" value="0.1" id="text5" maxlength="100" />
+<input type="button" value="決定" onclick="clickBtn5()" />
+
+<script>
+  function clickBtn5() {
+    const t5 = document.getElementById("text5").value;
+    document.getElementById("span5").textContent = t5;
+  }
+</script>
+  
+
+</html>
